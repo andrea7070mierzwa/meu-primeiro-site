@@ -1,12 +1,16 @@
+* {
+    text-decoration-color: beige;
+}
+
 p {
-    color: blue;
+    color: rgb(237, 237, 241);
     font-family: Arial, sans-serif;
     font-size: 20px;
 }
 
 body {
     color: rgb(218, 231, 231);
-    background-color: rgb(5, 68, 68);
+    background-color: rgb(6, 5, 45);
     font-family: 'Arial', Courier, monospace;
 }
 
@@ -14,4 +18,15 @@ li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(218, 231, 231);
     font-size: 20px;
+}
+
+.paragrafo-adicional {
+    color: blue;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#paragrafo-id {
+    color: rgb(220, 238, 234);
+    font-size: 18px;
 }
