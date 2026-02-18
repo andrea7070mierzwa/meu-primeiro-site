@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML e CSS - Andrea Mierzwa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>SELETORES CSS</h2>
+            <div class="imagem-seletores">
+                <img src="https://i.postimg.cc/0ymhwWXZ/seletores.png" alt="seletores CSS">
+            </div>
+
+            <div>
+                <p>Os seletores CSS são usados para selecionar os elementos HTML que queremos estilizar. Eles permitem
+                    que
+                    você aplique estilos específicos a elementos específicos em sua página da web.</p>
+
+                <p><strong>Seletores Básicos e de Combinadores:</strong></p>
+                <ul>
+                    <li>Universal (*): Seleciona todos os elementos.</li>
+                    <li>Tipo/Tag (p): Seleciona todos os elementos.</li>
+                    <li>Classe (.classe): Seleciona todos os elementos com class="classe".</li>
+                    <li>ID (#id): Seleciona um único elemento com id="id".</li>
+                    <li>Atributo ([atrib], [atrib=valor]): Seleciona com base na presença ou valor de um atributo.</li>
+                    <br>
+                </ul>
+
+                <p>Saiba mais em:</p><a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">W3Schools
+                    - CSS
+                    Selectors</a><br>
+
+            </div>
+
+        </section>
+
+
+
+        <hr>
+        <div>
+            <header>
+                
+
+                <p>Desafio proposto pelo instrutor na aula 5 - Boas Práticas, SEO e Acessibilidade para a Web</p><br>
+
+
+
+
+            </header>
+
+            <section>
+                <h2>DESAFIO: FORMULÁRIO DE CONTATO</h2><br>
+                <p>Crie um formulário de contato usando HTML e CSS. O formulário deve incluir os seguintes campos:</p>
+                <br>
+                <ul>
+                    <li>Nome (campo de texto)</li>
+                    <li>Email (campo de email)</li>
+                    <li>Idade (campo numérico)</li>
+                    <li>Matéria (campo de seleção com opções como Português, Matemática, Biologia, etc.)</li>
+                    <li>Escolaridade (campo de seleção com opções como Licenciatura Cursando, Licenciatura Concluída,
+                        Graduação Cursando, etc.)</li>
+                    <li>Disponibilidade (checkboxes para opções como Integral, Matutino, Vespertino, Noturno)</li>
+                    <li>Mensagem (campo de texto para o usuário escrever uma mensagem)</li>
+                </ul><br><br>
+            </section>
+        </div>
+        <section>
+            <h3>FORMULÁRIO DE CONTATO</h3>
+            <form action="#" method="POST">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="idade">Idade: </label>
+                <input type="number" id="idade" name="idade" required><br><br>
+
+                <label for="materia">Matéria: </label>
+                <select name="materia" id="materia" required>
+                    <option value="portugues">Português</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="ciências">Ciências</option>
+                    <option value="história">História</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="artes">Artes</option>
+                </select><br><br>
+
+                <label for="escolaridade">Escolaridade: </label>
+                <select name="escolaridade" id="escolaridade" required>
+                    <option value="licenciatura cursando">Licenciatura Cursando</option>
+                    <option value="licenciatura concluida">Licenciatura Concluída</option>
+                    <option value="graduação cursando">Graduação Cursando</option>
+                    <option value="graduação concluida">Graduação Concluída</option>
+                    <option value="pós-graduação cursando">Pós-Graduação Cursando</option>
+                    <option value="pós-graduação concluida">Pós-Graduação Concluída</option>
+                    <option value="mestrado cursando">Mestrado Cursando</option>
+                    <option value="mestrado concluido">Mestrado Concluído</option>
+                </select><br><br>
+
+                <p><strong>Disponibilidade:</strong></p>
+                <input type="checkbox" id="integral" name="disponibilidade" value="integral">
+                <label for="integral">Integral</label><br>
+
+                <input type="checkbox" id="matutino" name="disponibilidade" value="matutino">
+                <label for="matutino">Matutino</label><br>
+
+                <input type="checkbox" id="vespertino" name="disponibilidade" value="vespertino">
+                <label for="vespertino">Vespertino</label><br>
+
+                <input type="checkbox" id="noturno" name="disponibilidade" value="noturno">
+                <label for="noturno">Noturno</label><br><br>
+
+                <label for="mensagem">Nos conte um pouco sobre você: </label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required
+                    placeholder="Escreva sua mensagem aqui..."></textarea><br><br>
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2026 Andrea Mierzwa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
