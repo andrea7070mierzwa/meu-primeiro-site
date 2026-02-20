@@ -1,0 +1,215 @@
+p {
+    color: rgb(237, 237, 241);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    padding: 20px;
+    color: rgb(218, 231, 231);
+    background-color: rgb(6, 5, 45);
+    font-family: 'Arial', Courier, monospace;
+    display: inline-block;
+}
+
+li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(218, 231, 231);
+    font-size: 20px;
+}
+
+.paragrafo-adicional {
+    color: blue;
+    font-size: 16px;
+}
+
+#paragrafo-id {
+    color: rgb(220, 238, 234);
+    font-size: 18px;
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(218, 231, 231);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.block {
+    margin-top: 20px;
+    display: block;
+    height: 200px;
+    color: rgb(218, 231, 231);
+    font-size: 20px;
+    background-color: seashell;
+    font-style: italic;
+    color: rgb(6, 73, 73);
+}
+
+.inline {
+    display: inline;
+    color: rgb(218, 231, 231);
+    font-size: 20px;
+    background-color: seashell;
+    color: rgb(6, 73, 73);
+}
+
+.inline-block {
+    display: inline-block;
+    color: rgb(218, 231, 231);
+    font-size: 20px;
+    background-color: seashell;
+    color: rgb(6, 73, 73);
+}
+
+.grid-image {
+    float: left;
+    margin-right: 100px;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    font-style: oblique;
+    text-align: center;
+
+}
+
+.texto {
+    display: grid;
+    gap: 10px;
+}
+
+.texto1 {
+    display: inline-block;
+    gap: 10px;
+
+
+}
+
+.header {
+    background-color: rgb(80, 139, 139);
+    color: rgb(218, 231, 231);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.relativo {
+    position: relative;
+    background-color: rgb(80, 139, 139);
+    color: rgb(218, 231, 231);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.absoluto {
+    position: absolute;
+    background-color: rgb(8, 223, 223);
+    color: rgb(218, 231, 231);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixed {
+    position: fixed;
+    background-color: rgb(80, 139, 139);
+    color: rgb(218, 231, 231);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    display: grid;
+    position: absolute;
+    height: 400px;
+    grid-template-columns: 1fr, 2fr,1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.heeader {
+    background-color: rgb(242, 251, 251);
+    color: rgb(224, 14, 186);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+    grid-column: 1 / -1;
+}
+
+.nav {
+    background-color: rgb(8, 247, 247);
+    color: rgb(218, 231, 231);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+   
+    grid-column: 1/-1;
+    color: black;
+}
+.aside {
+    background-color: rgb(8, 247, 247);
+    color: rgb(69, 204, 204);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+    grid-column: 1fr;
+    color: rgb(246, 249, 249);
+    position: left;
+}
+
+.aside2 {
+    background-color: rgb(8, 247, 247);
+    color: rgb(69, 204, 204);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+    grid-column: 1fr;
+    color: rgb(246, 249, 249);
+    position: left;
+
+
+}
+.main {
+    background-color: rgb(247, 255, 255);
+    color: rgb(12, 245, 245);
+    border-radius: 0% 0% 10px 10px;
+    border-color: black;
+    font-family: 'Arial', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+    grid-column: 2fr;
+    color: rgb(246, 249, 249);
+}

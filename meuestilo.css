@@ -1,32 +1,116 @@
+/* Reset básico para evitar espaços indesejados */
 * {
-    text-decoration-color: beige;
-}
-
-p {
-    color: rgb(237, 237, 241);
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    /* "to bottom" significa que a cor começa no topo e desce */
+    background-image: linear-gradient(to bottom, rgb(208, 207, 230), rgb(45, 10, 80));
+    background-attachment: fixed; /* Isso faz o fundo ficar parado enquanto você rola o texto */
     color: rgb(218, 231, 231);
-    background-color: rgb(6, 5, 45);
-    font-family: 'Arial', Courier, monospace;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
-li {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(218, 231, 231);
-    font-size: 20px;
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.paragrafo-adicional {
-    color: blue;
+.header h1 {
+    color: white;
+    text-shadow: 0 0 10px #e00eba, 0 0 20px #e00eba;
+}
+
+/* Configuração do Grid baseada na sua imagem de referência */
+.container-principal {
+    display: grid;
+    gap: 15px;
+    /* Coluna Esquerda: 200px | Conteúdo: Flexível | Coluna Direita: 200px */
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Elementos que ocupam a largura total (Header, Nav, Footer) */
+.header,
+.nav,
+.footer {
+    grid-column: 1 / 4;
+    /* Vai da linha 1 até a 4 do grid */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.header {
+    background-color: rgb(242, 251, 251);
+    color: rgb(167, 191, 214);
+}
+
+.nav {
+    background-color: rgb(246, 246, 251);
+    color: rgb(24, 10, 211);;
+}
+
+.nav a {
+    color: rgb(24, 10, 211);
+    text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    margin: 0 10px;
 }
 
-#paragrafo-id {
-    color: rgb(220, 238, 234);
-    font-size: 18px;
+/* Estilo das colunas laterais e conteúdo principal */
+.aside,
+.aside2,
+.main {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Fundo sutil */
+}
+
+.main {
+    background-color: rgba(247, 255, 255, 0.1);
+}
+
+.footer {
+    background-color: rgb(26, 9, 87);
+    color: black;
+    margin-top: 20px;
+}
+
+/* Seus estilos de texto preservados */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.block {
+    display: block;
+    background-color: seashell;
+    color: rgb(6, 73, 73);
+    padding: 10px;
+    font-style: italic;
+}
+
+/* Faz as imagens não estourarem a caixa */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid white;
+    margin: 10px 0;
+}
+.texto {
+    display: grid;
+    gap: 10px;
+    /* Isso cria 3 colunas: as laterais pequenas e a do meio maior */
+    grid-template-columns: 150px 1fr 150px; 
+}
+
+.header, .nav {
+    /* Faz o cabeçalho e o menu ocuparem as 3 colunas inteiras */
+    grid-column: 1 / 4; 
+    text-align: center;
 }

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="meuestilo.css">
+    <title>DESAFIO 1 - CSS</title>
+</head>
+
+<body>
+<body>
+    <div class="container-grid">
+        <header class="header">
+            <h1>Cabeçalho do Site</h1>
+        </header>
+
+        <nav class="nav">
+            Menu: Home | Sobre | Contato
+        </nav>
+
+        <aside class="aside">
+            <h3>Coluna Esquerda</h3>
+            <p>Links ou anúncios extras.</p>
+        </aside>
+
+        <main class="main">
+            <h2>DESAFIO 1 - CSS</h2>
+            <p>O Box Model e o CSS Grid são fundamentais...</p>
+            </main>
+
+        <aside class="aside2">
+            <h3>Coluna Direita</h3>
+            <p>Mais informações laterais.</p>
+        </aside>
+
+        <footer class="footer">
+            <p>© 2026 Andrea Mierzwa. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+        <h1>Desafio 1 - CSS</h1>
+        <p>Desafio proposto pelo instrutor: 1ª parte</p>
+        <ul>
+            <li>Aplicar estilos CSS em um elemento HTML</li>
+            <li>Criar um novo arquivo HTML</li>
+            <li>Criar um novo arquivo CSS e vincular ao arquivo HTML</li>
+            <li>Adicionar um título e um parágrafo ao arquivo HTML</li>
+            <li>Utilizar o seletor de tag para selecionar o parágrafo</li>
+            <li>Alterar a cor do texto para azul e a fonte para arial</li>
+        </ul><br>
+        <h2>Adcionar mais dois parágrafos</h2>
+        <p class="paragrafo-adicional">Desafio proposto pelo instrutor: 1ª parte</p>
+        <ul>
+            <li>Adicionar mais dois parágrafos ao HTML</li>
+            <li>Atribuir uma classe a um parágrafo e uma classe a outro.</li>
+            <li>No arquivo CSS criar regras específicas para a classe e o id, alterando a cor e o tamanho da fonte.</li>
+        </ul><br>
+        <p id="paragrafo-id">Agora serão abordados o BoxModel, o CSS Grid e o Flexbox.</p>
+
+        <h2>
+            <a href="#valores-box-model">BOX MODEL</a>
+        </h2>
+
+
+        <p>O Box Model é um conceito fundamental no CSS que descreve a estrutura de um elemento HTML como uma caixa
+            retangular. Ele é composto por quatro áreas principais: conteúdo, preenchimento (padding), borda (border) e
+            margem (margin). O conteúdo é a área onde o texto ou os elementos filhos são exibidos. O preenchimento é o
+            espaço entre o conteúdo e a borda, enquanto a borda é a linha que envolve o elemento. A margem é o espaço
+            entre
+            a borda do elemento e os elementos adjacentes. Compreender o Box Model é essencial para controlar o layout e
+            o
+            espaçamento dos elementos em uma página web.</p>
+        <img src="https://i.postimg.cc/0yJkW1ZD/Captura-de-tela-de-2026-02-18-14-12-05.png" alt="Box Model"
+            width="500"><br><br>
+
+        <h2>
+            <a href="#css-grid">CSS GRID</a>
+        </h2>
+        <p>O CSS Grid é um sistema de layout bidimensional que permite criar designs complexos e responsivos de forma
+            fácil
+            e eficiente. Ele divide a página em linhas e colunas, permitindo que os elementos sejam posicionados em
+            qualquer
+            lugar dentro dessa grade. Com o CSS Grid, é possível criar layouts flexíveis e adaptáveis, facilitando a
+            organização do conteúdo em diferentes dispositivos e tamanhos de tela.</p>
+        <img src="https://miro.medium.com/0*og90_m1gsg9iOY7i.png" alt="CSS Grid" width="500"><br><br>
+
+        <h2>FLEXBOX</h2>
+        <p>O Flexbox é um modelo de layout unidimensional que facilita a distribuição de espaço entre os itens em um
+            contêiner, mesmo quando seu tamanho é desconhecido ou dinâmico. Ele permite alinhar e distribuir os itens de
+            forma eficiente, seja horizontalmente ou verticalmente. Com o Flexbox, é possível criar layouts flexíveis e
+            responsivos, ajustando automaticamente o tamanho dos itens para se adequar ao espaço disponível.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarAUKyNov9jRltu4Ehpe8hgDZn9CEN6XgIw&s"
+            alt="Flexbox layout diagram showing flexible container with multiple items arranged horizontally with space distribution controls and alignment options"
+            width="500"><br><br>
+
+        <h1>DISPLAYS</h1>
+        <p>O display é uma propriedade CSS que define como um elemento HTML é exibido na página. Existem vários valores
+            para
+            a propriedade display, cada um com um comportamento diferente. Alguns dos valores mais comuns incluem block,
+            inline, inline-block, flex e grid. O valor block faz com que o elemento ocupe toda a largura disponível e
+            comece
+            em uma nova linha, enquanto o valor inline permite que o elemento seja exibido na mesma linha que outros
+            elementos. O valor inline-block combina as características de block e inline, permitindo que o elemento seja
+            exibido na mesma linha, mas ainda ocupando apenas o espaço necessário. O valor flex é usado para criar
+            layouts
+            flexíveis, enquanto o valor grid é usado para criar layouts em grade.</p>
+
+        <h2 id="valores-box-model">VALORES DO BOX MODEL</h2>
+
+        <H2>BLOCK</H2>
+        <p>O valor block para a propriedade display faz com que o elemento ocupe toda a largura disponível e comece em
+            uma
+            nova linha. Isso significa que cada elemento com display: block será exibido em uma linha separada,
+            empurrando
+            os elementos seguintes para baixo. Exemplos de elementos que são block por padrão incluem
+        <p>
+            Esses elementos são usados para estruturar o conteúdo da página e criar seções distintas.
+        </p>
+
+        <H2>INLINE</H2>
+        <p>O valor inline para a propriedade display permite que o elemento seja exibido na mesma linha
+
+        <H2>INLINE-BLOCK</H2>
+        <p>O valor inline-block combina as características de block e inline, permitindo que o elemento seja
+            exibido na mesma linha, mas ainda ocupando apenas o espaço necessário. Isso significa que os
+            elementos com display: inline-block podem ser alinhados lado a lado, mas cada um ocupará apenas
+            o espaço necessário para seu conteúdo. :
+        <pre><p>
+    Exemplos de elementos que são inline por padrão incluem:<br>
+    &lt;a&gt;: Define um hyperlink.<br>
+    &lt;span&gt;: Usado para agrupar elementos em linha para fins de estilização.<br>
+    &lt;img&gt;: Define uma imagem.<br>
+    &lt;strong&gt;: Define texto com forte importância.<br>
+    &lt;em&gt;: Define texto enfatizado.<br>
+    &lt;b&gt;: Define texto em negrito.<br>
+    &lt;i&gt;: Define texto em itálico.<br>
+    &lt;label&gt;: Define um rótulo para um elemento de formulário.<br>
+    &lt;button&gt;: Define um botão clicável.<br>
+    &lt;input&gt;: Campo de entrada de dados.<br>
+    &lt;textarea&gt;: Área de entrada de texto.<br>
+    &lt;small&gt;: Define texto pequeno.<br>
+    &lt;code&gt;: Define um fragmento de código de computador.
+</p></pre>
+        <span><strong>Esses elementos são usados para estilizar partes específicas do texto
+                ou criar links.</strong>
+            </p>
+
+            <h2 id="css-grid">CSS GRID</h2>
+
+            <p>O valor grid para a propriedade display é usado para criar layouts em grade. Ele permite que os
+                elementos sejam organizados em linhas e colunas, facilitando a criação de designs complexos e
+                responsivos. Com display: grid, é possível definir áreas específicas para cada elemento,
+                controlar o espaçamento entre eles e criar layouts flexíveis que se adaptam a diferentes
+                tamanhos de tela.</p>
+
+            <H2>FLEX</H2>
+            <p>O valor flex para a propriedade display é usado para criar layouts flexíveis. Ele permite que os
+                elementos sejam organizados em uma única linha ou coluna, facilitando a distribuição de espaço
+                entre os itens. Com display: flex, é possível alinhar os itens horizontalmente ou verticalmente,
+                controlar o tamanho dos itens e criar layouts responsivos que se adaptam a diferentes tamanhos
+                de tela.</p>
+
+            <h2>EXEMPLOS</h2>
+            <P class="block">PARÁGRAFO-BLOCK</P>
+            <P class="inline">PARÁGRAFO-INLINE</P>
+            <P class="inline">PARÁGRAFO-INLINE</P>
+            <P class="inline">PARÁGRAFO-INLINE</P>
+            <p class="inline-block">PARÁGRAFO-INLINE-BLOCK</P>
+            <P class="inline-block">PARÁGRAFO-INLINE-BLOCK</P>
+            <P class="inline-block">PARÁGRAFO-INLINE-BLOCK</P>
+            <P class="inline-block">PARÁGRAFO-INLINE-BLOCK</P>
+
+            <div class="grid-container">
+                <img class="grid-image"
+                    src="https://assets.dio.me/8hLwsjY87MpoLHW2xt-dOJjJff6Als1qqO5d1-zh994/f:webp/q:80/L2FydGljbGVzL2NvdmVyL2U0M2I2MDJhLWQ1YjEtNDBiOC1hMGI3LWZjYWUzOWUxZTA2MC5wbmc"
+                    alt="imagem de um Grid Container">
+                <p class="texto">Um Grid-Container CSS é o elemento HTML pai que tem a propriedade display: grid ou
+                    display:
+                    inline-grid aplicada, tornando-se o contêiner principal de um sistema de layout bidimensional
+                    (linhas e
+                    colunas). Ele organiza os seus filhos diretos (grid items) em uma estrutura de grade precisa, ideal
+                    para
+                    layouts complexos e responsivos.</p>
+            </div>
+            <div>
+                <p class="texto1">Características de um Grid-Container CSS:</p>
+                <ul class="texto1">
+                    <li>Definição: Cria um novo contexto de formatação de grade para seus elementos filhos.</li>
+                    <li>Colunas e Linhas: Define-se o número e tamanho com grid-template-columns e grid-template-rows.
+                    </li>
+                    <li>Espaçamento: Usa-se gap (ou grid-gap) para definir o espaço entre linhas e colunas.</li>
+                    <li>Áreas Nomeadas: grid-template-areas permite nomear regiões, facilitando o posicionamento de
+                        itens.
+                    <li>Alinhamento: Controla o alinhamento de todos os itens com justify-items (horizontal) e
+                        align-items
+                        (vertical).
+                    </li>
+                    <a
+                        href="https://www.alura.com.br/artigos/css-grid-guia-propriedades-grid-container-grid-item?srsltid=AfmBOoqyZ-fkvMzD_FYwRX2qybiKHzM1DcU69G4nI4KSYZu-7tgbGncx">Para
+                        saber mais</a>
+                </ul>
+                </p>
+            </div>
+
+            <h2>GRID LAYOUT</h2>
+
+            <div class="grid-layout">
+
+                <p class="texto">O Grid Layout (ou CSS Grid) é um sistema bidimensional de layout CSS que organiza
+                    elementos
+                    na web usando linhas e colunas, permitindo criar designs complexos e responsivos com eficiência. Ele
+                    é
+                    "bidimensional" porque manipula linhas e colunas simultaneamente, facilitando o alinhamento e a
+                    estruturação de layouts sem os truques do passado.</p>
+            </div>
+            <div>
+                <p class="texto1">Principais características e conceitos:
+                </p>
+                <ul class="texto1">
+                    <li>Bidimensional: Controle total sobre linhas (rows) e colunas (columns) ao mesmo tempo.</li>
+                    <li>Contêiner e Itens: O elemento pai é definido como display: grid, tornando os elementos filhos,
+                        ou
+                        itens, posicionáveis na grade.
+
+                    <li>Estrutura: Utiliza grid-template-columns e grid-template-rows para definir o tamanho da malha.
+                    </li>
+                    <li>Espaçamento: Propriedades como gap (ou grid-gap) definem facilmente o espaço entre colunas e
+                        linhas.
+                    </li>
+                    <li>AÁreas Nominais: É possível criar áreas de layout nomeadas (grid-template-areas) para organizar
+                        cabeçalhos, rodapés e barras laterais de forma intuitiva.
+                    <li>
+                    <li>Unidades de Medida: Introduz a unidade $fr$ (fração) para criar tamanhos proporcionais no grid.
+
+
+                    </li>
+                    <a href="https://css-tricks.com/complete-guide-css-grid-layout/">Para
+                        saber mais</a>
+                </ul>
+                </p>
+            </div>
+
+
+
+
+
+</body>
+
+</html>

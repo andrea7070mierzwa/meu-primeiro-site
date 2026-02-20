@@ -2,29 +2,109 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="meuestilo.css"> 
-    <title>DESAFIO 1 - CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meuestilo.css">
+    <title>MEU GUIA DE ESTUDOS - CSS</title>
 </head>
-
 <body>
-    <h1>Desafio 1 - CSS</h1>
-    <p>Desafio proposto pelo instrutor: 1ª parte</p>
-    <ul>
-        <li>Aplicar estilos CSS em um elemento HTML</li>
-        <li>Criar um novo arquivo HTML</li>
-        <li>Criar um novo arquivo CSS e vincular ao arquivo HTML</li>
-        <li>Adicionar um título e um parágrafo ao arquivo HTML</li>
-        <li>Utilizar o seletor de tag para selecionar o parágrafo</li>
-        <li>Alterar a cor do texto para azul e a fonte para arial</li>
-    </ul><br>
-    <h2>Adcionar mais dois parágrafos</h2>
-    <p class="paragrafo-adicional">Desafio proposto pelo instrutor: 1ª parte</p>
-    <ul>
-        <li>Adicionar mais dois parágrafos ao HTML</li>
-        <li>Atribuir uma classe a um parágrafo e uma classe a outro.</li>
-        <li>No arquivo CSS criar regras específicas para a classe e o id, alterando a cor e o tamanho da fonte.</li>
-    </ul><br>
-    <p id="paragrafo-id">Este é o segundo parágrafo adicionado.</p>
+    <div class="container-principal"> 
+        
+        <header class="header">
+            <h1>Guia de Estudos: CSS Layouts</h1>
+            <p>Andrea Mierzwa - Praticando HTML & CSS</p>
+        </header>
 
-</body>
-</html>
+        <nav class="nav">
+            <a href="#desafio">O Desafio</a> | 
+            <a href="#box-model">Box Model</a> | 
+            <a href="#display-section">Displays</a> | 
+            <a href="#grid-section">CSS Grid</a> | 
+            <a href="#flex-section">Flexbox</a>
+        </nav>
+
+        <aside class="aside">
+            <h3>Recursos Externos</h3>
+            <ul>
+                <li><a href="https://rw6fz2.csb.app/" target="_blank">Exemplo de Grid</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">MDN Web Docs</a></li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            
+            <section id="desafio">
+                <h2>1. O Desafio Inicial</h2>
+                <p>O instrutor propôs a aplicação de estilos básicos:</p>
+                <ul>
+                    <li>Vincular arquivo CSS externo.</li>
+                    <li>Selecionar tags, classes e IDs.</li>
+                    <li>Alterar cores (azul), fontes (Arial) e tamanhos.</li>
+                </ul>
+                <p class="paragrafo-adicional">Este é um parágrafo com classe específica.</p>
+                <p id="paragrafo-id">Este é um parágrafo com ID específico.</p>
+            </section>
+
+            <hr>
+
+            <section id="box-model">
+                <h2>2. BOX MODEL</h2>
+                <p>O Box Model é um conceito fundamental no CSS que descreve a estrutura de um elemento HTML como uma caixa retangular. Ele é composto por quatro áreas principais:</p>
+                <ul>
+                    <li><strong>Conteúdo:</strong> Onde o texto e as imagens aparecem.</li>
+                    <li><strong>Padding (Preenchimento):</strong> Espaço entre o conteúdo e a borda.</li>
+                    <li><strong>Border (Borda):</strong> A linha que envolve o preenchimento.</li>
+                    <li><strong>Margin (Margem):</strong> Espaço por fora da borda, separando outros elementos.</li>
+                </ul>
+                <img src="https://i.postimg.cc/0yJkW1ZD/Captura-de-tela-de-2026-02-18-14-12-05.png" alt="Diagrama do Box Model" width="100%">
+            </section>
+
+            <hr>
+
+            <section id="display-section">
+                <h2>3. PROPRIEDADE DISPLAY</h2>
+                
+                <h3>BLOCK</h3>
+                <p>Elementos de bloco ocupam toda a largura disponível e começam em uma nova linha.</p>
+                <p class="block">Exemplo de elemento Block</p>
+
+                <h3>INLINE</h3>
+                <p>Elementos inline ocupam apenas o espaço necessário para o seu conteúdo e não aceitam largura/altura fixa.</p>
+                
+                <h3>INLINE-BLOCK</h3>
+                <p>Combina os dois: os elementos ficam lado a lado (como inline), mas permitem definir largura, altura e margens (como block). 
+                   Exemplos de tags comuns: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;img&gt;.</p>
+            </section>
+
+            <hr>
+
+            <section id="grid-section">
+                <h2>4. CSS GRID</h2>
+                <p>O CSS Grid é um sistema de layout bidimensional (linhas e colunas). Ele permite criar designs complexos e responsivos de forma intuitiva.</p>
+                <p><strong>Principais conceitos:</strong></p>
+                <ul>
+                    <li><strong>Bidimensional:</strong> Controle total sobre linhas (rows) e colunas (columns) ao mesmo tempo.</li>
+                    <li><strong>Contêiner e Itens:</strong> O elemento pai vira um grid, e os filhos viram itens da grade.</li>
+                    <li><strong>Unidade fr:</strong> Representa uma fração do espaço livre no contêiner.</li>
+                    <li><strong>Gap:</strong> Define o espaço entre as células da grade.</li>
+                </ul>
+                <img src="https://miro.medium.com/0*og90_m1gsg9iOY7i.png" alt="Exemplo de Grid" width="100%">
+            </section>
+
+            <hr>
+
+            <section id="flex-section">
+                <h2>5. FLEXBOX</h2>
+                <p>Diferente do Grid, o Flexbox é unidimensional (foca ou em linha ou em coluna por vez). É excelente para alinhar itens e distribuir espaço de forma dinâmica dentro de um contêiner.</p>
+            </section>
+
+        </main>
+
+        <aside class="aside2">
+            <h3>Dicas de Estudo</h3>
+            <p><strong>Lembre-se:</strong> O CSS lê as regras de cima para baixo. Se houver conflito, a última regra ou a mais específica vence!</p>
+            <p><strong>Inspeção:</strong> Use F12 no navegador para testar mudanças no Grid em tempo real.</p>
+        </aside>
+
+        <footer class="footer">
+            <p>© 2026 Andrea Mierzwa. Documentação para estudos de Front-End, Back-End e CSS.</
